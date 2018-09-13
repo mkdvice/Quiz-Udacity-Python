@@ -36,7 +36,7 @@ print('Bem vindo', nome,'!', 'Esse é uma game de perguntas sobre história e ge
 
 
 def questionario(pergunta_quiz, resposta_quiz, index):
-    '''Essa função servirá para preencher os campos do quiz __1__, __2__ e __3__ '''
+    '''Essa função servirá para preencher os campos do quiz __1__, __2__, __3__ e __4__ '''
 
     if index == 0: # ocupar_brn igual a 0, corresponde ao primeiro número da lista
         subtr_palavras1 = []
@@ -64,7 +64,42 @@ def questionario(pergunta_quiz, resposta_quiz, index):
             index = index + 1
             verif_questao(seg_preench, resposta_quiz, esp_vazios, index)
 
+    elif index == 2:
+        subtr_palavras3 = []
+        lista_split = pergunta_quiz.split(' ')
+        for item in lista_split:
+            if item == esp_vazios[0]:
+                subtr_palavras3.append(resposta_quiz[0])
+            elif item == esp_vazios[1]:
+                subtr_palavras3.append(resposta_quiz[1])
+            elif item == esp_vazios[2]:
+                subtr_palavras3.append(resposta_quiz[2])
+            else:
+                subtr_palavras3.append(item)
+            tres_preench = ' '.join(subtr_palavras3)
+            index = index + 1
+            verif_questao(tres_preench, resposta_quiz, esp_vazios, index)
+
+    else:
+        complet_lacuna = []
+        lista_split = pergunta_quiz.split(' ')
+        for item in lista_split:
+            if item == esp_vazios[0]:
+                complet_lacuna.append(resposta_quiz[0])
+            if item == esp_vazios[1]:
+                complet_lacuna.append(resposta_quiz[1])
+            if item == esp_vazios[2]:
+                complet_lacuna.append(resposta_quiz[2])
+            if item == esp_vazios[3]:
+                complet_lacuna.append(resposta_quiz[3])
+            else:
+                complet_lacuna.append(item)
+
+        completo = ' '.join()
 
 
 
-def verif_questao (pergunta_quiz, resposta_quiz, esp_vazios, index):
+
+
+
+#def verif_questao (pergunta_quiz, resposta_quiz, esp_vazios, index):
