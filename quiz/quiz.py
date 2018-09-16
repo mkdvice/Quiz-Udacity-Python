@@ -164,3 +164,9 @@ if level == 3: # Se for level fácil
 
 if level == 0 or 4: # Para sair do programa
     quit()
+
+'''Sites usados para consultas:
+https://www.youtube.com/user/cursosemvideo
+https://pt.stackoverflow.com/questions/121920/input-ou-raw-input/121922
+https://wiki.python.org.br/ManipulandoStringsComPython
+https://www.tutorialspoint.com/python/string_upper.htm'''
