@@ -6,8 +6,6 @@ __author__= "@Ezequiel_Alexandre"
 
 # IPND Projeto Final
 
-import time
-
 # Perguntas para o level fácil
 pergun_facil = 'A capital do Brasil é __1__ fica no estado de __2__ cuja a capital é __3__ conhecida como a cidade do __4__'
 
